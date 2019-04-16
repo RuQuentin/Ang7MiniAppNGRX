@@ -1,0 +1,18 @@
+<mat-toolbar color="warn">
+
+    <button mat-button color="white"
+      *ngFor="let item of menu"
+      routerLink="{{ LINK | i18nSelect:item }}">
+      {{ NAME | i18nSelect:item }}
+    </button>
+
+  <!-- <button mat-button color="white">Home</button>
+  <button mat-button color="white">Currency Converter</button>
+  <button mat-button color="white">Profile</button>
+  <button mat-button color="white">Edit Profile</button>
+  <button mat-button color="white">Admin</button>
+  <button mat-button color="white">Admin Modal</button>
+  <button mat-button color="white">Sign In</button>
+  <button mat-button color="white">Sign Up</button> -->
+
+</mat-toolbar>
